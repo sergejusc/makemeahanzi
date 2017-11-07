@@ -2,3 +2,5 @@
 *.swp
 .meteor
 .DS_Store
+server
+packages
