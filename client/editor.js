@@ -95,7 +95,7 @@ const incrementStage = (amount) => {
 }
 
 const loadCharacter = () => {
-  const character = window.location.hash[1];
+  const character = decodeURIComponent(window.location.hash)[1];
   const glyph = Session.get('editor.glyph');
   if (!character) {
     changeGlyph('getNextGlyph');
